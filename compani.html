@@ -1,0 +1,53 @@
+<div class="companiinfo">
+    <div class="karta" id="map">
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=77dcfd46-5942-4653-bad5-d6cf87335167&load=Map&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(function () {  
+          var map = new ymaps.Map("map", {
+            center: [52.090706, 23.690915], 
+            zoom: 17
+          });
+      
+          if (map) {
+            ymaps.modules.require(['Placemark', 'Circle'], function (Placemark, Circle) {
+              var placemark = new Placemark([52.090706, 23.690915]);
+            });
+          }
+        });
+      </script>
+    <div class="infoblok">
+        <div class="blok">
+            <i class="bx bxs-map"></i>
+            <div class="info">
+                <div class="title">Адрес</div>
+                <div class="tekst">г.Брест ул.Какаята д.72 оф.12</div>
+            </div>
+        </div>
+        <div class="blok">
+            <i class='bx bx-mobile-alt'></i>
+            <div class="info">
+                <div class="title">Телефоны</div>
+                <div class="tekst">тел. 8 029 123-45-67<br />факс. 8 029 123-45-67</div>
+            </div>
+        </div>
+        <div class="blok">
+            <i class='bx bx-envelope'></i>
+            <div class="info">
+                <div class="title">E-mail</div>
+                <div class="tekst">email@email.email</div>
+            </div>
+        </div>
+        <div class="blok">
+            <i class='bx bx-time-five'></i>
+            <div class="info">
+                <div class="title">Режим работы</div>
+                <div class="tekst">
+                    <p>Офис выписки ТТН и склад: с 8.00 до 16.00 без перерыва</p>
+                    <p>Заказы принимаются: с 8.00 до 16.00, а так же круглосуточно по Viber и электронной почте</p>
+                    <p>Выходные дни: суббота, воскресенье</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

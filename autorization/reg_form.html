@@ -1,0 +1,37 @@
+﻿<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/boxicons.min.css" />
+    <script src="/js/javascr.js"></script>
+    <title>ФермерОК</title>
+  </head>
+  <body>
+    <div class="aurhreg">
+      <a href="/index.php"><div class="closform">X</div></a>
+      <form action="" method="POST">
+        <div class="icon">
+          <i class="bx bxs-user-circle"></i>
+        </div>
+        <div class="login">
+          <div class="tekst">логин <sup style="color: red;">*</sup></div>
+          <input type="text" size="30" name="login" autocomplete="off"/>
+        </div>
+        <div class="pass">
+          <div class="tekst">пароль <sup style="color: red;">*</sup></div>
+          <input type="password" size="30" maxlength="20" name="pass" autocomplete="off"/>
+        </div>
+        <div class="repass">
+            <div class="tekst">повторить пароль <sup style="color: red;">*</sup></div>
+            <input type="password" size="30" maxlength="20" name="pass2" autocomplete="off"/>
+        </div>
+        <div class="button">
+          <input type="submit" value="Регистрация" name="submit" id="butt"/>
+        </div>
+        <div class="registrtext"><a href="/autorization/_form.php?mode=auth">Вход ?</a></div>
+      </form>
+    </div>
+  </body>
+</html>
